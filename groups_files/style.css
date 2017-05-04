@@ -1,3 +1,7 @@
 body {
-	background: #999;
+	/* Rectangle Copy: */
+	background-position: 0px 0px;
+	background-image: radial-gradient(at bottom, #1D3846 20%, #000000 100%);
+
 }
+
