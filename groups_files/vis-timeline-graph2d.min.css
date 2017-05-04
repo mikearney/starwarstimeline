@@ -823,7 +823,7 @@ div.vis-tooltip {
 .vis-time-axis .vis-grid.vis-vertical {
 	height: 100vh !important;
 	position: absolute;
-	border-right: 3px solid 
+	border-right: 1px solid 
 }
 .vis-time-axis .vis-grid.vis-vertical-rtl {
 	position: absolute;
@@ -834,7 +834,8 @@ div.vis-tooltip {
 	box-shadow: 0px 0px 32px -4px rgba(25,167,207,0.3);
 }
 .vis-time-axis .vis-grid.vis-major {
-	border-color: #bfbfbf
+	border-color: #0089E2;
+
 }
 .vis-timeline {
 	position: relative;
