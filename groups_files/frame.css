@@ -1,8 +1,10 @@
 body {
-  background: #494949;
+  background: #282828;
   color: white;
   padding: 20px;
   margin: 0px;
+  height: 100vh;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 #switch {
@@ -10,20 +12,23 @@ body {
 }
 
 .switch-label {
-  cursor: pointer;
-    background: #fff;
-    color: #111;
-    padding: 0px;
-    padding-left: 15px;
+    cursor: pointer;
+    background: #474747;
+    color: #ccc;
+    /* padding: 0px; */
+    padding-left: 9px;
     padding-right: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-    box-shadow: 0 2px #666;
+    padding-top: 2px;
+    border-radius: 15px;
+    box-shadow: 0 2px #1e1e1e;
     position: fixed;
-    bottom: 14px;
+    bottom: 12px;
+    font-size: 14px;
+    height: 25px;
+    letter-spacing: 2px;
 }
 .switch-label::after {
-  content: "on";
+  content: "POWER";
 }
 .switch-label::before {
   content: " ";
@@ -32,8 +37,7 @@ body {
   width: 10px;
   height: 10px;
   background: #003321;
-  margin-right: 10px;
-  border: 1px solid #111;
+  border: 1px solid #535757;
 }
 .switch-label:active {
   box-shadow: none;
@@ -41,10 +45,13 @@ body {
 }
 
 #switch:checked + .switch-label::before {
-  background: #22ff55;
+  background: #02C8FF;
+  box-shadow: 0 0px 13px #c1eefb;
+
+
 }
 #switch:checked + .switch-label::after {
-  content: "off";
+  content: "POWER";
 }
 
 @keyframes flicker {
@@ -120,7 +127,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 0px 20px 0px black; 
+  box-shadow: 0 0px 20px 0px #58697b; 
 }
 .container::after {
   content: " ";
@@ -243,6 +250,7 @@ body {
     font-size: 30px;
     visibility: hidden;
     pointer-events: none;
+        padding: 20px;
    
 }
 

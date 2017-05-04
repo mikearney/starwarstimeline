@@ -404,11 +404,11 @@ div.vis-tooltip {
 	border-width: 1px;
 	background: #E8112B;
 	display: inline-block;
-	z-index: 1
+	z-index: 1;
+	box-shadow: 0px 8px 14px -4px rgb(49, 49, 49);
 }
 .vis-item.vis-selected {
-	border-color: #ffc200;
-	background-color: #fff785;
+	background-color: #ff5c70;
 	z-index: 2
 }
 .vis-editable.vis-selected {
@@ -445,6 +445,7 @@ div.vis-tooltip {
 	padding: 0;
 	border-radius: 2px;
 	margin-top: -5px;
+	box-shadow: 0px 0px 32px 0px rgba(25,167,207,.5);
 }
 
 .vis-item .vis-item-overflow {
@@ -820,8 +821,9 @@ div.vis-tooltip {
 	visibility: hidden
 }
 .vis-time-axis .vis-grid.vis-vertical {
+	height: 100vh !important;
 	position: absolute;
-	border-left: 2px solid 
+	border-right: 3px solid 
 }
 .vis-time-axis .vis-grid.vis-vertical-rtl {
 	position: absolute;
@@ -841,5 +843,5 @@ div.vis-tooltip {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	
+
 }
