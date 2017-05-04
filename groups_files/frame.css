@@ -1,8 +1,7 @@
 body {
   background: #494949;
   color: white;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
   margin: 0px;
 }
 
@@ -21,7 +20,7 @@ body {
     margin-top: 10px;
     box-shadow: 0 2px #666;
     position: fixed;
-    top: 0;
+    bottom: 14px;
 }
 .switch-label::after {
   content: "on";
@@ -113,15 +112,15 @@ body {
     opacity: 0.54226;
   }
 }
+
+
 .container {
   background: #121010;
-  width: 95vw;
-  height: 95vh;
-  margin-top: 10px;
+  height: 92vh;
   position: relative;
   overflow: hidden;
-  border: 2px solid #666;
   border-radius: 20px;
+  box-shadow: 0 0px 20px 0px black; 
 }
 .container::after {
   content: " ";
@@ -237,13 +236,14 @@ body {
   }
 }
 .overlay {
-  color: #00FF00;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 60px;
-  visibility: hidden;
-  pointer-events: none;
+    color: #FFF;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-size: 30px;
+    visibility: hidden;
+    pointer-events: none;
+   
 }
 
 #switch:checked ~ .container .overlay {
