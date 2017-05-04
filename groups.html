@@ -12,6 +12,7 @@
 
   <script src="./groups_files/vis.js"></script>
   <link href="./groups_files/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css">
+  <link href="./groups_files/style.css" rel="stylesheet" type="text/css">
   
 </head>
 <body>
@@ -45,7 +46,8 @@
   var options = {
     start: '2014-01-10',
     end: '2014-02-10',
-    editable: true
+    editable: false,
+    height: '95vh',
   };
 
   var timeline = new vis.Timeline(container, items, groups, options);
