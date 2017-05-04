@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <!-- saved from url=(0071)http://visjs.org/examples/timeline/items/backgroundAreasWithGroups.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Timeline | Background areas with groups</title>
+  <title>Star Wars | Timeline of Galactic History</title>
 
   <style>
     body, html {
       font-family: 'space mono', arial, sans-serif;
-      font-size: 11pt;
+      font-size: 12pt;
+      font-weight: 400;
     }
   </style>
 
   <script src="./groups_files/vis.js"></script>
   <link href="./groups_files/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css">
   <link href="./groups_files/style.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 
 
 </head>
@@ -27,30 +28,33 @@
 
 <script>
   var items = new vis.DataSet([
-    {id: 'A', content: 'Period A', start: '2014-01-16', end: '2014-01-22', type: 'background', group: 1},
-    {id: 'B', content: 'Period B', start: '2014-01-23', end: '2014-01-26', type: 'background', group: 2},
-    {id: 'C', content: 'Period C', start: '2014-01-27', end: '2014-02-03', type: 'background'}, // no group
-    {id: 1, content: 'item 1<br>start', start: '2014-01-30', group: 1},
-    {id: 2, content: 'item 2', start: '2014-01-18', group: 1},
-    {id: 3, content: 'item 3', start: '2014-01-21', group: 2},
-    {id: 4, content: 'item 4', start: '2014-01-17', end: '2014-01-21', group: 2},
-    {id: 5, content: 'item 5', start: '2014-01-28', type:'point', group: 2},
-    {id: 6, content: 'item 6', title: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.', start: '2014-01-25', group: 2}
+    {id: 'A', content: 'Pre-Clone Wars', start: '969', end: '977', type: 'background', group: 1},
+    {id: 'B', content: 'Period B', start: '980', end: '990', type: 'background', group: 2},
+
+    {id: 'C', content: 'Period C', start: '990', end: '1000', type: 'background'}, // no group
+    {id: 1, content: 'item 1<br>start', start: '983', group: 1},
+    {id: 2, content: 'item 2', start: '990', group: 1},
+    {id: 3, content: 'item 3', start: '999', group: 2},
+    {id: 4, content: 'item 4', start: '997', end: '996', group: 2},
+    {id: 5, content: 'item 5', start: '995', type:'point', group: 2},
+    {id: 6, content: 'item 6', title: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.', start: '989', group: 2}
   ]);
 
   var groups = new vis.DataSet([
-    {id: 1, content: 'Group 1'},
+    {id: 1, content: 'Era'},
     {id: 2, content: 'Group 2'},
     {id: 3, content: 'Group 3'}
   ]);
 
   var container = document.getElementById('visualization');
   var options = {
-    start: '2014-01-10',
-    end: '2014-02-10',
+    start: '965',
+    end: '1005',
     editable: false,
-    height: '95vh',
-    navigationButtons: true,
+    height: '100vh',
+    orientation: 'both',
+    showCurrentTime: false,
+
   };
 
   var timeline = new vis.Timeline(container, items, groups, options);

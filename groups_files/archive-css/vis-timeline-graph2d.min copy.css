@@ -402,7 +402,7 @@ div.vis-tooltip {
 	color: #fff;
 	border-color: #AE3D3F;
 	border-width: 1px;
-	background: #E8112B;
+	background: rgba(241,85,77,0.45);
 	display: inline-block;
 	z-index: 1
 }
@@ -440,11 +440,10 @@ div.vis-tooltip {
 }
 .vis-item.vis-background {
 	border: none;
-	background: rgba(78, 180, 246, 0.72);
+	background: rgba(25,167,207,0.3);
 	box-sizing: border-box;
 	padding: 0;
-	border-radius: 2px;
-	margin-top: -5px;
+	margin: 0
 }
 
 .vis-item .vis-item-overflow {
@@ -583,7 +582,7 @@ div.vis-tooltip {
 .vis-foreground .vis-group {
 	position: relative;
 	box-sizing: border-box;
-	border-bottom: 1px solid #4EB4F6;
+	border-bottom: 1px solid #25799B
 }
 .vis-foreground .vis-group:last-child {
 	border-bottom: none
@@ -636,7 +635,6 @@ div.vis-tooltip {
 .vis-labelset .vis-label .vis-inner {
 	display: inline-block;
 	padding: 5px;
-	color: white;
 /*	min-height: 20vh; */
 }
 .vis-labelset .vis-label .vis-inner.vis-hidden {
@@ -649,8 +647,7 @@ div.vis-tooltip {
 	box-sizing: border-box
 }
 .vis-panel.vis-bottom, .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top {
-	border: 6px #4EB4F6;
-	box-shadow: 0px 0px 32px 0px rgba(25,167,207,.5);
+	border: 1px #35464E
 }
 .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right {
 	border-top-style: solid;
@@ -803,13 +800,12 @@ div.vis-tooltip {
 	height: 100%
 }
 .vis-time-axis .vis-text {
-    position: absolute;
-    color: #fff;
-    padding-left: 7px;
-    overflow: hidden;
-    box-sizing: border-box;
-    white-space: nowrap;
-    font-size: 20px;
+	position: absolute;
+	color: #ababab;
+	padding: 3px;
+	overflow: hidden;
+	box-sizing: border-box;
+	white-space: nowrap
 }
 .vis-time-axis .vis-text.vis-measure {
 	position: absolute;
@@ -828,8 +824,8 @@ div.vis-tooltip {
 	border-right: 1px solid 
 }
 .vis-time-axis .vis-grid.vis-minor {
-	border-color: #4EB4F6;
-	box-shadow: 0px 0px 32px -4px rgba(25,167,207,0.3);
+	border-color: #35464E;
+	box-shadow: 0px 0px 21px -4px rgba(25,167,207,0.15);;
 }
 .vis-time-axis .vis-grid.vis-major {
 	border-color: #bfbfbf
