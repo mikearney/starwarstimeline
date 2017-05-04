@@ -821,7 +821,7 @@ div.vis-tooltip {
 }
 .vis-time-axis .vis-grid.vis-vertical {
 	position: absolute;
-	border-left: 1px solid 
+	border-left: 2px solid 
 }
 .vis-time-axis .vis-grid.vis-vertical-rtl {
 	position: absolute;

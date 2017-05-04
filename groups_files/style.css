@@ -1,6 +1,9 @@
-body {
+body, html {
 	/* Rectangle Copy: */
 	background-position: 0px 0px;
 	background: #0C0704;
+	font-family: 'space mono', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
 }
 
