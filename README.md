@@ -5,6 +5,6 @@ A visual representation of galactic events based on http://starwars.wikia.com/wi
 Install:
 npm install vis
 
-![alt text](https://raw.githubusercontent.com/mikearney/starwarstimeline/groups_files/img/screenshot.png)
+![alt text](https://i.imgur.com/NMt0pWE.png)
 
 
