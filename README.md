@@ -4,3 +4,5 @@ A visual representation of galactic events based on http://starwars.wikia.com/wi
 
 Install:
 npm install vis
+
+
