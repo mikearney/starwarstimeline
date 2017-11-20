@@ -30,11 +30,36 @@ body {
 	box-shadow: none !important;
 }
 
+.firstorder {
+	background: -moz-linear-gradient(left, rgba(246,78,78,0.72) 0%, rgba(255,255,255,0) 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(246,78,78,0.72) 0%,rgba(255,255,255,0) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(246,78,78,0.72) 0%,rgba(255,255,255,0) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	box-shadow: none !important;
+}
+
 .movie {
-	background: rgba(246, 231, 78, .6) !important;
+	background: rgba(246, 231, 78, .6);
 	box-shadow: none !important;
 	color: black;
+	font-weight: bold;
 	text-transform: uppercase;
-	font-weight: bold;	
 	border-color: rgba(246, 231, 78, 1) !important;
+}
+
+.preclone {
+	background: rgba(255,255,255, 0.1) !important;
+	box-shadow: none !important;
+}
+
+.theclonewars {
+	background: rgba(255,255,255, .3) !important;
+	box-shadow: none !important;
+}
+
+.battlegood {
+	background: rgba(25,167,207,0.72) !important;
+}
+
+.battlebad {
+	background: red !important;
 }
