@@ -75,7 +75,6 @@
     end: '0050', // start and end dictate where the window is zoomed to on load
     height: '100vh',
     orientation: 'both',
-    // hiddenDates: 'yearly',
     showCurrentTime: false,
     zoomMin: 1000 * 60 * 60 * 24 * 31 * 12 * 12 // Cannot zoom closer than 1 year increment
 
@@ -84,6 +83,8 @@
 
 
   var timeline = new vis.Timeline(container, items, groups, options);
+
+
 
 </script>
 

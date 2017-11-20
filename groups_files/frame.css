@@ -12,6 +12,29 @@ body {
   display: none;
 }
 
+.button {
+    cursor: pointer;
+    background: #474747;
+    color: #ccc;
+    /* padding: 0px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    border-radius: 15px;
+    box-shadow: 0 2px #1e1e1e;
+    position: fixed;
+    bottom: 24px;
+    right: 44px;
+    font-size: 14px;
+    height: 25px;
+}
+
+.button::after {
+  content: "RESET";
+}
+
+
+
 .switch-label {
     cursor: pointer;
     background: #474747;
