@@ -24,10 +24,10 @@
 // first level eras
 
     {id: 'A', className: 'prehistory', content: 'Prehistory', start: new Date(-6021,0,1), end: new Date(-3277,0,1), type: 'background'},
-    {id: 'B', className: 'falloftheoldrepublic', content: 'Fall of the Old Republic', start: new Date(-3278,0,1), end: new Date(-1032,0,1), type: 'background'},
+    {id: 'B', className: 'falloftheoldrepublic', content: 'Fall of the Old Republic (Dark Age)', start: new Date(-3278,0,1), end: new Date(-1032,0,1), type: 'background'},
     {id: 'C', content: 'Republic Era', start: new Date(-1032,0,1), end: new Date(-0033,0,1), type: 'background', group: 1}, 
     {id: 'D', className: 'falloftherepublic', content: 'Fall of the Republic', start: new Date(-0033,0,1), end: new Date(-0019,0,1), type: 'background', group: 1},
-    {id: 'E', className: 'imperialera', content: 'Imperial Era', start: new Date(-0019,0,1), end: '0005', type: 'background', group: 1},
+    {id: 'E', className: 'imperialera', content: 'Imperial Era', start: new Date(-0019,0,1), end: '0004', type: 'background', group: 1},
     {id: 'F', content: 'New Republic Era', start: '0005', end: '0050', type: 'background', group: 1},
     {id: 'G', className: 'preclone  ', content: 'Cold War', start: '0005', end: '0034', type: 'background', group: 2 },
     {id: 'H', className: 'firstorder', content: 'First Order', title: 'First Order - Resistance War', start: '0034', end: '0050', type: 'background', group: 2  },
@@ -38,8 +38,10 @@
     {id: 'J', className: 'theclonewars', content: 'Clone Wars', start: new Date(-0018,0,1), end: new Date(-0015,0,1), type: 'background', group: 2},
     {id: 'K', className: 'preclone', content: 'Pre-galactic Civil War', start: new Date(-0015,0,1), end: '0000', type: 'background', group: 2},
     {id: 'L', className: 'theclonewars', content: 'Galactic Civil War', start: '0000', end: '0004', type: 'background', group: 2},
-    {id: 'M', className: 'theclonewars', content: '√', title: 'Senator Lanever Villecham is elected Chancellor of the New Republic', start: '0033', group: 2},
-      {id: 'n', className: 'blacktored', content: 'The First Order begins', title: 'The First Order begins using Rinnrivin Dis cartel and the Amaxine warriors to procure funds for rebuilding its navy', start: '0021', end: '0034', type: 'background', group: 2  },
+    {id: 'M', className: 'theclonewars', content: '√', title: 'Senator Lanever Villecham is elected Chancellor of the New Republic', start: '0033', group: 1},
+    {id: 'n', className: 'blacktored', content: 'The First Order begins', title: 'The First Order begins using Rinnrivin Dis cartel and the Amaxine warriors to procure funds for rebuilding its navy', start: '0021', end: '0034', type: 'background', group: 2  },
+    {id: 'O', className: 'bluebg', content: 'Separatists', title: 'Thousands of star systems leave the Republic and join the Confederacy of Independent Systems and Count Dooku.', start: new Date(-0024,0,1), end: new Date(-0019,0,1), type: 'range', group: 1},
+    {id: 'P', className: 'bluebg', content: 'Jedi–Sith war', start: new Date(-2032,0,1), end: new Date(-1032,0,1), type: 'range', group: 4  },
 
 
 
@@ -58,8 +60,8 @@
 
 
 // Group 4 Conflict
-    {id: 10, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Yavin" target="_blank">*</a>', title: 'Battle of Yavin',start: '0000', group: 4},
-    {id: 11, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Military_Disarmament_Act" target="_blank">∆</a>', title: 'Military Disarmament Act',start: '0004', group: 2},
+    {id: 10, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Yavin" target="_blank">*</a>', title: 'Battle of Yavin - The destruction of the first Death Star',start: '0000', group: 4},
+    {id: 11, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Military_Disarmament_Act" target="_blank">∆</a>', title: 'Military Disarmament Act',start: '0004', group: 1},
     {id: 12, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Jakku" target="_blank">*</a>', title: 'Battle of Jakku',start: '0005', group: 4},
     {id: 13, className: 'battlebad',  content: '<a href="http://starwars.wikia.com/wiki/Attack_on_Tuanul" target="_blank">*</a>', title: 'Attack on Tuanul',start: '0034', group: 4},
     {id: 14, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Battle_on_Takodana" target="_blank">*</a>', title: 'Battle on Takodana',start: '0034', group: 4},
@@ -67,14 +69,26 @@
     {id: 16, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Alliance_to_Restore_the_Republic" target="_blank">Rebel Alliance</a>', title: 'The Alliance to Restore the Republic',start: '0002', end: '0004', group: 2},
     {id: 17, className: 'battlegood',  content: 'Formation of the New Republic', title: 'The Rebel Alliance begins reorganizing into the New Republic',start: '0004', end: '0005', group: 2},
     {id: 18, className: 'battlegood',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Endor" target="_blank">*</a>', title: 'Battle of Endor',start: '0004', group: 4},
-    {id: 19, className: 'battlebad',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Hoth" target="_blank">*</a>', title: 'Battle of Hoth',start: '0003', group: 4},
+    {id: 19, className: 'battlebad',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Hoth" target="_blank">*</a>', title: 'Battle of Hoth (Echo Base)',start: '0003', group: 4},
     {id: 20, className: 'blacktoblue',  content: 'Rebel Uprising', title: 'Bail Organa and Ahsoka Tano organize a rebel network',start:  new Date(-0018,0,1), end: '0002', group: 2},
     {id: 21, className: 'battlebad', content: '•',  title: 'The Death Star moved to Scarif',  start: new Date(-009,0,1), group: 4},
     {id: 22, className: 'battlebad', content: '*',  title: 'Jedha City is destroyed by the Death Star.',  start: '0000', group: 4},
     {id: 23, className: 'battlebad', content: '*',  title: 'Alderaan is destroyed by the Death Star',  start: '0000', group: 4},
     {id: 24, className: 'battlebad', content: '•',  title: 'Construction of the Death Star begins over Geonosis',  start: new Date(-0020,0,1), group: 4},
-    {id: 25, className: 'battlebad', content: '<a href="http://starwars.wikia.com/wiki/Destruction_of_Luke_Skywalker%27s_Jedi" target="_blank">Destruction of<br>Luke Skywalkers Jedi</a>',  title: 'Unknown period of time between 28 ABY and 34 ABY', type: 'range',start: '0028', end:'0032', group: 4},
-    {id: 26, content: 'Luke Skywalker<br>goes into exile', title: 'Unknown period of time between 28 ABY and 34 ABY', start: '0028', type: 'point', group: 4},
+    {id: 25, className: 'battlebad', content: '<a href="http://starwars.wikia.com/wiki/Destruction_of_Luke_Skywalker%27s_Jedi" target="_blank">Destruction of Skywalker Jedi</a>',  title: 'Luke Skywalker goes into exile. Unknown period of time between 28 ABY and 34 ABY', type: 'range',start: '0028', end:'0032', group: 4},
+
+    {id: 27, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Imperial-Republic_peace_talks" target="_blank">∆</a>', title: 'Imperial-Republic peace talks',start: '0005', group: 2},
+    {id: 28, className: 'theclonewars',  content: '∆', title: 'The New Republic restores the Galactic Senate on Chandrila, its capital.',start: '0004', group: 1},
+    {id: 29, className: 'theclonewars', type: 'point', content: 'Ω', title: 'Obi-Wan Kenobi goes into exile on Tatooine. Yoda goes into exile on Dagobah.',start: new Date(-0019,0,1), group: 5},
+    {id: 39, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">∆</a>', title: 'Order 66 wipes out the Jedi Order and nearly all Jedi.', start: new Date(-0019,0,1), group: 1},
+    {id: 40, className: 'battlebad',  content: '<a href="http://starwars.wikia.com/wiki/Battle_of_Geonosis">*</a>', title: 'Battle of Geonosis', start: new Date(-0022,0,1), group: 4},
+    {id: 41, className: 'battlebad',  content: '<a href="http://starwars.wikia.com/wiki/Invasion_of_Naboo">*</a>', title: 'Invasion of Naboo', start: new Date(-0032,0,1), group: 4},
+    {id: 42, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">∆</a>', title: 'Senator Sheev Palpatine is elected Supreme Chancellor of the Republic, replacing Finis Valorum.', start: new Date(-0032,0,1), group: 1},
+    {id: 43, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">?</a>', title: 'The Galactic Senate debates the Military Creation Act to determine whether the Galactic Republic should raise an army', start: new Date(-0024,0,1), group: 2},
+    {id: 44, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">!</a>', title: 'Plot to assassinate Padmé Amidala. Separatist leaders hope to silence the senator from Naboo, who opposes the Military Creation Act.', start: new Date(-0022,0,1), group: 2},
+    {id: 45, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">∆</a>', title: 'Jar Jar Binks proposes that Chancellor Palpatine be given emergency powers to raise an army without the interference of the Senate.', start: new Date(-0022,0,1), group: 2},
+    {id: 46, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">∆</a>', title: 'Anakin Skywalker is anointed Darth Vader, Dark Lord of the Sith.', start: new Date(-0019,0,1), group: 2},
+    {id: 47, className: 'theclonewars',  content: '<a href="http://starwars.wikia.com/wiki/Order_66" target="_blank">∆</a>', title: 'The Republic is reorganized into the first Galactic Empire by Chancellor Palpatine – secretly the Dark Lord of the Sith Darth Sidious – who declares himself Galactic Emperor', start: new Date(-0019,0,1), group: 1},
 
 
 
@@ -93,7 +107,7 @@
     min: new Date(-6021, 0, 1),
     max: '0050',
     start: new Date(-0040,0,1),  // start and end dictate where the window is zoomed to on load
-    end: '0050', // start and end dictate where the window is zoomed to on load
+    end: '0045', // start and end dictate where the window is zoomed to on load
     height: '100vh',
     orientation: 'both',  
     showCurrentTime: false,
