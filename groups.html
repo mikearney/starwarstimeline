@@ -20,29 +20,41 @@
 
 <script>
   var items = new vis.DataSet([
-    {id: 'A', content: 'Prehistory', start: new Date(-6021,0,1), end: new Date(-3277,0,1), type: 'background', group: 1},
-    {id: 'B', content: 'Fall of the Old Republic', start: new Date(-3278,0,1), end: new Date(-1032,0,1), type: 'background', group: 1},
+    {id: 'A', className: 'prehistory', content: 'Prehistory', start: new Date(-6021,0,1), end: new Date(-3277,0,1), type: 'background', group: 1},
+    {id: 'B', className: 'falloftheoldrepublic', content: 'Fall of the Old Republic', start: new Date(-3278,0,1), end: new Date(-1032,0,1), type: 'background', group: 1},
     {id: 'C', content: 'Republic Era', start: new Date(-1032,0,1), end: new Date(-0033,0,1), type: 'background', group: 1}, 
-    {id: 'D', content: 'Fall of the Republic', start: new Date(-0033,0,1), end: new Date(-0019,0,1), type: 'background', group: 1},
-    {id: 'E', content: 'Imperial Era', start: new Date(-0019,0,1), end: '0005', type: 'background', group: 1},
+    {id: 'D', className: 'falloftherepublic', content: 'Fall of the Republic', start: new Date(-0033,0,1), end: new Date(-0019,0,1), type: 'background', group: 1},
+    {id: 'E', className: 'imperialera', content: 'Imperial Era', start: new Date(-0019,0,1), end: '0005', type: 'background', group: 1},
     {id: 'F', content: 'New Republic Era', start: '0005', end: '0006', type: 'background', group: 1},
-    {id: 'G', content: 'Cold War', start: '0006', end: '0034', type: 'background', group: 1},
+    {id: 'G', className: 'falloftherepublic', content: 'Cold War', start: '0006', end: '0034', type: 'background', group: 1},
     {id: 'H', content: 'First Order - Resistance War', start: '0034', end: '0035', type: 'background', group: 1},
 
 
+// Group 3 = Media, movies, etc
      
-    {id: 1, content: 'item 1<br>start', start: '0003', group: 1},
-    {id: 2, content: 'item 2', start: new Date(-0100,0,1), group: 1},
-    {id: 3, content: 'item 3', start: '0004', group: 3},
-    {id: 4, content: 'item 4', start: '0010', end: '0020', group: 2},
-    {id: 5, content: 'item 5', start: '0030', type:'point', group: 2},
-    {id: 6, content: 'item 6', title: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.', start: '0020', group: 2}
+    {id: 1, className: 'movie', content: 'Episode 1: The Phamtom Menace',  start: new Date(-0032,0,1), group: 3},
+    {id: 2, className: 'movie', content: 'Episode 2: Attack of the Clones',  start: new Date(-0022,0,1), group: 3},
+    {id: 3, className: 'movie', content: 'Episode 3: Revenge of the Sith',  start: new Date(-0019,0,1), group: 3},
+    {id: 4, className: 'movie', content: 'Episode 4: A New Hope',  start: '0000', group: 3},
+    {id: 5, className: 'movie', content: 'Episode 5: The Empire Strikes Back',  start: '0003', group: 3},
+    {id: 6, className: 'movie', content: 'Episode 6: Return of the Jedi',  start: '0004', group: 3},
+    {id: 7, className: 'movie', content: 'Episode 7: The Force Awakens',  start: '0034', group: 3},
+    {id: 8, className: 'movie', content: 'Episode 8: The Last Jedi',  start: '0035', group: 3},
+    {id: 9, className: 'movie', content: 'Rogue One',  start: new Date(-0013,0,1), group: 3},
+
+
+
+    // {id: 2, content: 'item 2', start: new Date(-0100,0,1), group: 2},
+    // {id: 3, content: 'item 3', start: '0004', group: 3},
+    // {id: 4, content: 'item 4', start: '0010', end: '0020', group: 2},
+    // {id: 5, content: 'item 5', start: '0030', type:'point', group: 2},
+    // {id: 6, content: 'item 6', title: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.', start: '0020', group: 2}
   ]);
 
   var groups = new vis.DataSet([
     {id: 1, content: 'Era'},
     {id: 2, content: 'Group 2'},
-    {id: 3, content: 'Group 3'}
+    {id: 3, content: 'Movies'}
   ]);
 
   var container = document.getElementById('visualization');
