@@ -12,6 +12,6 @@ JSON: http://starwars.wikia.com/api/v1/Articles/AsSimpleJson?id=499437
 API Documentation: http://api.wikia.com/wiki/Documentation
 
 Screenshot
-![alt text](https://imgur.com/a/nOGbD.png)
+![alt text](https://i.imgur.com/E0U8Ybi.png)
 
 
