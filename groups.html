@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<input type="button" id="window1" value="Reset"><br>
 
   <div id="visualization">
 
@@ -118,6 +119,9 @@
 
   var timeline = new vis.Timeline(container, items, groups, options);
 
+  document.getElementById('window1').onclick = function() {
+    timeline.setWindow(new Date(-0040,0,1), '0045');
+  };
 
 
 </script>
