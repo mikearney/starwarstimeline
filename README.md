@@ -1,6 +1,10 @@
 # Star Wars Visual Timeline
 
-A visual representation of galactic events based on http://starwars.wikia.com/wiki/Timeline_of_galactic_history
+A visual representation of galactic events 
+
+LIVE DEMO HERE: http://pure-tap.com/swtest/
+
+Data is based on http://starwars.wikia.com/wiki/Timeline_of_galactic_history
 
 Install:
 npm install vis
