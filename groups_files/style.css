@@ -1,7 +1,9 @@
 body {
 	/* Rectangle Copy: */
 	background-position: 0px 0px;
-	background: #14171a;
+/* Rectangle Copy: */
+background-image: radial-gradient(50% 100%, #1D3846 0%, #000000 100%);
+
 	font-family: 'space mono', sans-serif;
     font-size: 12pt;
     font-weight: 400;
@@ -89,4 +91,8 @@ a {
 
 .battlebad {
 	background: red !important;
+}
+
+.vis-label .vis-inner {
+	min-height: 27vh;
 }
