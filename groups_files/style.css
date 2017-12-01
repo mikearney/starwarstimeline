@@ -2,7 +2,7 @@ body {
 	/* Rectangle Copy: */
 	background-position: 0px 0px;
 /* Rectangle Copy: */
-background-image: radial-gradient(50% 100%, #1D3846 0%, #000000 100%);
+background: #0d0f11;
 
 	font-family: 'space mono', sans-serif;
     font-size: 12pt;
@@ -117,4 +117,9 @@ a {
 .vis-timeline {
     position: inherit;
  }
+
+ .vis-foreground .vis-group {
+    border-bottom: 1px solid #4eb4f652;
+}
+
 
