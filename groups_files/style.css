@@ -96,3 +96,25 @@ a {
 .vis-label .vis-inner {
 	min-height: 27vh;
 }
+
+.buttonreset {
+    background: #474747;
+    color: #ccc;
+    /* padding: 0px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    border-radius: 15px;
+    box-shadow: 0 2px #1e1e1e;
+    position: fixed;
+    top: 24px;
+    right: 44px;
+    font-size: 14px;
+    height: 25px;
+    z-index: 1000;
+}
+
+.vis-timeline {
+    position: inherit;
+ }
+
